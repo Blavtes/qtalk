@@ -1,4 +1,7 @@
+Due to corporate strategy adjustments, you may want to check out [here](https://github.com/startalkIM)
+
 Startalk, The Best open sourced instant messenger software in the world!
+
 
 Table of contents
 =================
