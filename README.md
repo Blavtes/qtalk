@@ -1,209 +1,213 @@
+Due to corporate strategy adjustments, you may want to check out [here](https://github.com/startalkIM)
 
-(https://github.com/qunarcorp/startalk_node)
-
-Startalk是世界上最好的开源im系统级解决方案!
-
-* [English Version](https://github.com/qunarcorp/qtalk/blob/master/README.en.md)
-* [Startalk是啥](#Startalk(星语)——通用通信解决方案)
-* [我们的使用场景](#我们的使用场景)
-* [系统特性](#系统特性)
-* [系统独有特性](#系统自有特点)
-* [如何使用？](#如何使用？)
-  * [部署环境要求](#部署环境要求)
-  * [快速开始](#快速开始)
-  * [官方网站](https://im.qunar.com/new/)
-* [已有用户](#已有用户)
+Startalk, The Best open sourced instant messenger software in the world!
 
 
-# Startalk(星语)——通用通信解决方案
+Table of contents
+=================
 
-沟通是人类最基础的需求——《人类简史》
+* [Chinese Version(中文版)](https://github.com/qunarcorp/qtalk/blob/master/README.zh_CN.md)
+* [Startalk](#Startalk---Solution-for-Instant-Message)
+* [Application Scenarios](#Application-Scenarios)
+* [Characteristics of Startalk](#Characteristics-of-Startalk)
+* [How to Use](#How-to-Use)
+  * [Requirements for the Environment of Deployment](#Requirements-for-the-Environment-of-Deployment)
+  * [Start](#Start)
+  * [How to Integrate Your Own App in Startalk](#How-to-Integrate-Your-Own-App-in-Startalk)
+  * Official Website
+  * [Characteristics of the System](#Characteristics-of-the-System)
+  * [Decentralized Design and the Way of Deployment](#Decentralized-Design-and-the-Way-of-Deployment)
+* [FAQ](#FAQ)
+* [Our Partners](#Our-Partners)
 
-Startalk 的目标是成为一款通用的，高性能的企业级im套件。也在努力改变当前大型im系统无完整开源解决方案的现状。
 
-Startalk 前身是去哪儿的Qtalk，已在Qunar稳定运行3年多。
+**********************************************
+***Make deployment easier！***
 
-其内核也在去哪儿旅行和去哪儿网站上扮演着着客服服务工具的角色。
+***Startalk One-click deployment is open，Please download：[binary Installation package](https://im.qunar.com/#/download_easy)***
+**********************************************
 
-也就是说，一套内核同时为去哪儿网提供了内部企业办公和商家tob业务的支撑。
 
+# Startalk - Solution for Instant Message
 
-# 我们的使用场景
-* 办公自动化OA
-* 商业企业客服系统
-* 各种im场景的SDK级嵌入
+Communication is a fundamental need of humankind. – “Sapiens: A brief history of humankind”
 
-# 系统自有特点
-* 开放源代码
+Startalk is going to be a universal, high-performance IM software for business. Currently, there is a lack of open-sourced IM systems in the world. Startalk is changing this situation.
 
+The predecessor of Startalk is Qtalk, which have ran smoothly in Qunar for more than 3 years. The core of Startalk plays a role of customer service tool in Qunar.
+
+In other words, a single core has solved Qunar’s problem of communication internally and externally.
+
+# Application Scenarios
+
+- OA
+-	Customer service system for business
+-	First-party SDKs for multiple IM situations
+
+# Characteristics of Startalk
+
+-	Open-sourced
 ```comment
-我们正在逐步把工作重心从公司git转移到github上，希望可以为大家提供更稳定持久的服务。
+We are transferring our focus from git of our company to Github, aiming to provide you services that are stable and long-lasting.
 ```
-* 只推荐私有化部署
-
+-	Private deployment is highly recommended
 ```comment
-企业有私有化部署的理由和需求，我们是希望帮助企业甚至团体在满足高效沟通和足够的扩展性上提供尽可能多的帮助。
+Private deployment is the need for businesses. Taking efficient communication and expansibility as basics, we try our best to help enterprises.
 ```
 
-# 如何使用？
+[Back to TOC](#table-of-contents)
 
-Startalk专注于基于私有化部署。
-这导致了startalk的登录过程略显复杂。
-但是没关系，Startalk团队致力于把im系统设计门槛降低到很低的同时，也致力于降低首次接入时的成本。
+# How to Use
 
-通常，我们使用一款自有软件时，常见的接入方式分三步：
-* 下载app
-* 根据官方要求做一些设定
-* 注册账号&登录
+Startalk focuses on private deployment, which leads to the complexity of the log-in process of Startalk. Luckily, our team not only made the process of designing IM system easy, but also decrease the cost of it.
 
-Startalk因为是私有化部署，服务器也需要部署在自己公司，这使得接入步骤变成了四步：
-* 下载app
-* 部署后台系统(新增)
-* 通过后台配置，给客户端做一些设定
-* 倒入账号&登录
+Usually, when you are going to use an app, there are three steps for you to get access to it:
+-	Download the app
+-	Modify settings based on guide
+-	Sign-up & Log-in
 
-如果您真的很希望做私有化接入，但是又不想在前期有一些投入和成本，可以考虑在公共环境中做试用或暂住：
+However, since Startalk focuses on private deployment, the server of app needs to be deployed in your company. Therefore, there are four steps for you to get access to Startalk:
+-	Download the app
+-	Deploy the backstage system
+-	Modify client app through backstage configuration
+-	Import accounts & Log-in
 
-* 加入[公共域](https://im.qunar.com/new/#/register).
+If you want to try private deployment without cost, you can try it in public domain
 
-当您已经决定加入私有化部署，或者决定从公共环境中将数据迁移到私有环境：
+If you have decided to use [private deployment](https://github.com/qunarcorp/ejabberd-open#startalk-ejabberd) or transfer your data from public to private domain.. Let’s begin!
 
-* 开始[私有化部署!](https://github.com/qunarcorp/ejabberd-open#startalk-ejabberd).
+[Back to TOC](#table-of-contents)
+
+## Requirements for the Environment of Deployment
+
+-	[Back-end server](https://github.com/qunarcorp/ejabberd-open) centos 7 (allows Ubuntu and various kinds of private cloud in the future)
+-	[IOS SDK](https://github.com/qunarcorp/imsdk-ios), minimum requirement: IOS 9 
+-	[Android SDK](https://github.com/qunarcorp/imsdk-android), minimum requirement of API: 16
+-	Compiled [Android SDK](https://github.com/qunarcorp/imsdk-android), minimum requirement of API: 26
+-	[Windows 1.0](https://github.com/qunarcorp/open_source_startalk) windows vs2012 qt 5.2.1
+- [PC 2.0](https://github.com/qunarcorp/startalk_pc_v2) include three platforms: Windows, Mac, and Linux; minimum requirement of qt: 5.9; minimum requirement of Cmake: 3.12
+-	[Web](https://github.com/qunarcorp/startalk_web) recommended environment of deployment: node 8.6.0 npm 5.3.0 (node@>=7.6.0; npm@>=3.0.0; pm2@>=2.0.0)
+-	Other platforms can use C++14 to compile. Interface is [qt](https://qt.io/).
+
+---------Let’s test it!!!!!---------
+
+[Back to TOC](#table-of-contents)
+
+## Start
+
+-	[Ejabberd](https://github.com/qunarcorp/ejabberd-open) back end source code and introduction
+-	[Imsdk-android](https://github.com/qunarcorp/imsdk-android) source code and introduction
+-	[Imsdk-iOS](https://github.com/qunarcorp/imsdk-ios) source code and introduction
+-	[Windows 1.0](https://github.com/qunarcorp/open_source_startalk) source code and introduction
+- [PC 2.0](https://github.com/qunarcorp/startalk_pc_v2) source code and introduction
+-	[Web](https://github.com/qunarcorp/startalk_web) source code and introduction
+
+If you want to start quickly, please enter our official website to sign up an account for test in public domain
+
+[Back to TOC](#table-of-contents)
+
+## How to Integrate Your Own App in Startalk
+
+Startalk allows users to redevelop it to integrate their own app in Startalk, in order to achieve customization. Startalk Pro provides backstage for you to upload app; after deployment, you can embed your app (RN or H5) through backstage configuration.[More information](application.md)
+
+[Back to TOC](#table-of-contents)
+
+## Official Website
+
+For different customers, we have different solutions. If you are interested, please see our official website.
+
+[Back to TOC](#table-of-contents)
+
+## Characteristics of the System
+
+-	Focus on user experience and data security
+-	Allows end-to-end encryption. Use TLS connection, completely binary protocol
+-	Allows all types of messages: text, emoji, file, audio, video, photo, location, red packet, code, etc.
+-	Allows access to all platforms
+-	Decentralized design. Allow private cloud or public cloud deployment.
+
+[Back to TOC](#table-of-contents)
+
+### Include the functions below:
+-	DM and group chat
+-	Search
+-	Push
+-	Audio and video chat
+-	Red packet and split bill
+-	Encrypted conversation
+-	Organization structure
+-	OA for business
+
+[Back to TOC](#table-of-contents)
+
+## Decentralized Design and the Way of Deployment
+![architecture](image/sequence1.png)
+
+1.	Separations between each domain
+2.	Users are connected to domains
+3.	Domain can be enlarged horizontally
+4.	Public can be used by multiple domains
+
+The design of Startalk is decentralized, which integrated non-state service into public and state service into domains. 
+
+![architecture](image/sequence2.png)
+
+As long as you have a server, you can deploy an IM system in your home!!
+
+[Back to TOC](#table-of-contents)
+
+## Back-end Modules
+![architecture](image/structure.png)
+
+Startalk includes:
+
+- [Ejabberd](https://github.com/qunarcorp/ejabberd-open): the core component of IM. It maintains the connection with client app and message routing
+- [Or](https://github.com/qunarcorp/or_open): the load balancing component of IM. It verifies the identity of client app and forwards the request from http to the corresponding backstage services
+- [Im_http_service](https://github.com/qunarcorp/im_http_service_open): Port service of IM HTTP. It takes charge of searching the data and settings, as well as synchronizing the chat history (a java service based on tomcat).
+- [Qtalk_cowboy](https://github.com/qunarcorp/qtalk_cowboy_open) (this service will be discarded in the future since all of ports will be move to im_http_service) : port service of IM HTTP It takes charge of searching the data and settings, as well as synchronizing the chat history.
+- [Qfproxy](https://github.com/qunarcorp/qfproxy_open): IM file service. It takes charge of uploading and downloading the file (a java service based on tomcat).
+- [Push_service](https://github.com/qunarcorp/push_service_open): Push service in IM. It pushes off-line messages (a java service based on tomcat).
+- [Qtalk_search](https://github.com/qunarcorp/qtalk_search): It provides the service to search people and groups remotely
+- Redis: Caching service in IM
+- Postgresql: database service in IM
+
+[Back to TOC](#table-of-contents)
+
+## Client-side Modules
+
+Android
+- [Imsdk-android](https://github.com/qunarcorp/imsdk-android) Android SDK 
+
+iOS
+- [imsdk-iOS](https://github.com/qunarcorp/imsdk-ios) ios SDK
+- [libqimkit-ios-cook](https://github.com/qunarcorp/libqimkit-ios-cook) Pod library of components
+- [libqimcommoncategories](https://github.com/qunarcorp/libqimcommoncategories-ios) library pf extended tools
+- [libqimdatabase](https://github.com/qunarcorp/libqimdatabase-ios) component library of data library
+- [libqimopenssl](https://github.com/qunarcorp/libqimopenssl-ios) OpenSSL Library that applicable to ios/Mac
+
+Windows 1.0
+- [Windows 1.0](https://github.com/qunarcorp/open_source_startalk) source code
+
+PC 2.0(include Windows, Mac, and Linux)
+- [PC 2.0](https://github.com/qunarcorp/startalk_pc_v2)
+
+Web
+- Source code for [Web](https://github.com/qunarcorp/startalk_web)
+
+Emacs
+- Source code for [Emacs](https://github.com/qunarcorp/qim-emacs)
+
+[Back to TOC](#table-of-contents)
+
+# FAQ
+See [FAQ](https://github.com/qunarcorp/qtalk/issues)
+
+[Back to TOC](#table-of-contents)
+
+# Our Partners
+
+![architecture](image/qunar.png)![architecture](image/blf.png)![architecture](image/sports.png)![architecture](image/bjgydx.png)![architecture](image/xchk.png)![architecture](image/or.png)![architecture](image/yakang.png)![architecture](image/weichai.png)![architecture](image/qichezhijia.png)
+
+[Back to TOC](#table-of-contents)
 
 
-## 部署环境要求
--   [后端](https://github.com/qunarcorp/ejabberd-open)服务器centos 7(未来会支持ubuntu,以及各种私有云)
--   [ios SDK](https://github.com/qunarcorp/imsdk-ios)  最低支持iOS9系统
--   最低[Android SDK](https://github.com/qunarcorp/imsdk-android)：
-SDK要求最低API级别为16
--   编译[Android SDK](https://github.com/qunarcorp/imsdk-android)： SDK要求您针对API 26或更高版本进行编译
--   [Windows](https://github.com/qunarcorp/open_source_startalk)： 要求window vs2012 qt 5.2.1
--   [Web](https://github.com/qunarcorp/startalk_node)： 推荐部署环境node 8.6.0 npm 5.3.0（node@>=7.6.0；npm@>=3.0.0；pm2@>=2.0.0）
--   其他平台均可使用C++14进行编译。界面是[qt](https://qt.io/)
-
-### 看到这里，您现在可能已经希望测试一番了。。。
-
-## 快速开始
-* [ejabberd](https://github.com/qunarcorp/ejabberd-open)  后端源码及介绍
-
-* [imsdk-android](https://github.com/qunarcorp/imsdk-android) 安卓源码及介绍
-
-* [imsdk-iOS](https://github.com/qunarcorp/imsdk-ios) iOS 源码及介绍
-
-* [Windows](https://github.com/qunarcorp/open_source_startalk) Windows 源码及介绍
-
-* [Web](https://github.com/qunarcorp/startalk_node) web 源码及介绍
-
-如果您不想费事，或者希望可以快速开始，那么可以进入我们的[官方网站](https://im.qunar.com)注册公共域账号进行测试。
-
-## 如何在startalk内集成自己的应用
-Startalk支持用户进行二次扩展，我们提供上传应用的后台，您可通过后台配置的方式嵌入自己的应用，满足企业定制化需求。[点击了解详情](application.md)
-
-## [官方网站](https://im.qunar.com)
-我们针对不同层次的客户提供了不同层次的支持方式。
-如果您感兴趣但是担心各种使用上的问题，可以移步[官网](https://im.qunar.com) 
-
-## 系统特性
-* 注重您的使用体验和信息安全
-* 支持端到端加密方式。默认使用TLS连接，纯二进制协议
-* 支持所有的消息类型，文本、表情、文件、音视频、图片、位置、红包、代码……；
-* 支持全平台接入；
-* 采用去中心化设计。支持私有云或公有云部署
-
-### 包括以下扩展功能
--   单聊及群聊
--   搜索
--   push
--   音视频
--   红包&AA收款
--   会话加密
--   组织架构
--   企业OA
-
-## 技术支持（QQ交流群）
-![QQ](image/erweima.png)
-
-
-## 去中心化设计及部署方式
-![architecture](image/arch.png)
-
-Startalk 采用去中心化设计，将非状态服务合并到了Public中，状态服务进入了Domain中。Domain横向扩展，相互之间隔离
-
-![architecture](image/deploy.png)
-
-去中心化部署，只要有服务器，自己家里都能部署一套im服务
-
-
-### 后端模块
-
-![architecture](image/arch_ejab.png)
-
-+ [ejabberd](https://github.com/qunarcorp/ejabberd-open)
-
-IM核心组件，负责维持与客户端的长连接和消息路由
-
-+ [or](https://github.com/qunarcorp/or_open)
-
-IM负载均衡组件，负责验证客户端身份，以及转发http请求到对应的后台服务
-+ [im_http_service](https://github.com/qunarcorp/im_http_service_open)
-
-IM HTTP接口服务，负责IM相关数据的查询、设置以及历史消息同步
-
-+ [qtalk_cowboy](https://github.com/qunarcorp/qtalk_cowboy_open)(后面所有的接口都会迁移到im_http_service，这个服务会废弃)
-
-IM HTTP接口服务，负责IM相关数据的查询、设置以及历史消息同步，后面会全部迁移到im_http_service上
-
-+ [qfproxy](https://github.com/qunarcorp/qfproxy_open)
-
-IM文件服务，负责文件的上传和下载
-
-+ [qtalk_search](https://github.com/qunarcorp/qtalk_search)
-
-提供远程搜索人员和群的服务
-
-+ redis
-
-IM缓存服务
-
-+ postgresql
-
-IM数据库服务
-
-### 客户端模块
-
-#### android端
-+ [imsdk-android](https://github.com/qunarcorp/imsdk-android)
-安卓SDK
-
-#### ios端
-+ [imsdk-iOS](https://github.com/qunarcorp/imsdk-ios)
-ios SDK
-
-+ [libqimkit-ios-cook ](https://github.com/qunarcorp/libqimkit-ios-cook)
-各个组件Pod库
-
-+ [libqimcommoncategories](https://github.com/qunarcorp/libqimcommoncategories-ios)
-扩展工具组件库
-
-+ [libqimdatabase](https://github.com/qunarcorp/libqimdatabase-ios)
-数据库组件库
-
-+ [libqimopenssl](https://github.com/qunarcorp/libqimopenssl-ios)
-适用于iOS/Mac的OpenSSL库
-
-#### Windows端
-+ [Windows](https://github.com/qunarcorp/open_source_startalk)源码
-
->如有需要接入MAC端，可先行下载客户端自主部署,下载地址:[https://im.qunar.com/new/#/download](https://im.qunar.com/new/#/download)
-
-#### Web端
-+ [Web](https://github.com/qunarcorp/startalk_node)源码
-
-# 常见使用问题
-+ [查看常见使用问题](https://github.com/qunarcorp/qtalk/issues)
-
-# 已有用户
-
-目前已广泛使用的主要厂商，如去哪儿、北工大、便利蜂、新晨航空、爱云动、OpenResty
-
-![architecture](image/qunar.png)![architecture](image/blf.png)![architecture](image/sports.png)![architecture](image/bjgydx.png)![architecture](image/xchk.png)![architecture](image/untitled.png)
